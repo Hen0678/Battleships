@@ -50,7 +50,7 @@ def count_ships_hit(board):
 
 make_ships(player_board)
 # Determines the number of guesses
-turns = 10
+turns = 12
 #print_board(player_board)
 #print_board(guess_board)
 while turns > 0:
