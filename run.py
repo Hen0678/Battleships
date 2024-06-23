@@ -7,3 +7,22 @@ guess_board = [[''] * 8 for x in range(8)]
 # A way to convert letters to numbers
 letters_to_numbers = {'a': 0, 'b': 1, 'c':2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7}
 
+def print_board(board):
+    print('a b c d e f g h')
+    print('---------------')
+    # Iterates 1 through to 8 and joins on a "|" 
+    row_number = 1
+    for row in board:
+        print("%d|%s|" %  (row_number, "|".join(row)))
+        row_number += 1
+
+def make_ships():
+
+# Will ask ther user the row and column for their guess
+def ship_location():
+    pass
+
+# Will count every time a ship is hit
+def count_ships_hit():
+    pass
+
