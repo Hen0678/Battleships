@@ -1,9 +1,9 @@
 from random import randint
 
 # Creates an 8 x 8 board that will hold the player ships
-player_board = [[''] * 8 for x in range(8)]
+player_board = [[' '] * 8 for x in range(8)]
 # Creates an 8 x 8 board for player guesses
-guess_board = [[''] * 8 for x in range(8)]
+guess_board = [[' '] * 8 for x in range(8)]
 print(player_board)
 print(guess_board)
 
@@ -20,14 +20,29 @@ def print_board(board):
         row_number += 1
 
 # Ships will be generated randomly 
-def make_ships():
+def make_ships(board):
     for ship in range(5):
-        ship row, ship column = randint(0,7), randint(0,7)
-
+        ship_row, ship_column = randint(0,7), randint(0,7)
+        while board[ship_row][ship_column] == 'x':
+            ship_row, ship_column = randint(0,7), randint(0,7)
+        board[ship_row][ship_column] = 'x'
 
 # Will ask ther user the row and column for their guess
 def ship_location():
-    pass
+    row = input('Enter a row number (1-8)')
+    # While loop if a number other than 1-8 is entered
+    while row not in '12345678':
+        print('Error - please enter a number (1-8)')
+        row = input('Enter a row number (1-8)')
+    column = input('Enter a column letter (a-h)')
+    while column not in 'abcdefgh':
+        print('Error - please enter a letter (a-h)')
+        column = input('Enter a column letter (a-h)')
+    return int(row) - 1, letters_to_numbers[column]
+
+
+
+
 
 # Will count every time a ship is hit
 def count_ships_hit():
