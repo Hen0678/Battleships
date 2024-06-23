@@ -51,5 +51,25 @@ def count_ships_hit(board):
 make_ships(player_board)
 # Determines the number of guesses
 turns = 10
-print_board(player_board)
-print_board(guess_board)
+#print_board(player_board)
+#print_board(guess_board)
+while turns > 0:
+    print('Let battle commence!')
+    print_board(guess_board)
+    row, column = ship_location()
+    # Will check to see if this guess has already been made
+    if guess_board[row][column] == '-':
+        print('You must guess elsewhere')
+    # Places an x where a correct guess is made
+    elif player_board[row][column] == 'x':
+        print('HIT!')
+        guess_board[row][column] = 'x'
+        # Counts down the number of turns remaining
+        turns -= 1
+    else:
+        print('Miss - recalibrate your coordinates')
+        # Add an '-' where the incorrect guess was made
+        guess_board[row][column] = '-'
+        turns -= 1
+
+
