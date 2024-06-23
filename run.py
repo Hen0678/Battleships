@@ -58,8 +58,8 @@ while turns > 0:
     print_board(guess_board)
     row, column = ship_location()
     # Will check to see if this guess has already been made
-    if guess_board[row][column] == '-':
-        print('You must guess elsewhere')
+    if guess_board[row][column] == 'o':
+        print('Already guessed here - guess elsewhere')
     # Places an x where a correct guess is made
     elif player_board[row][column] == 'x':
         print('HIT!')
@@ -69,7 +69,7 @@ while turns > 0:
     else:
         print('Miss - recalibrate your coordinates')
         # Add an '-' where the incorrect guess was made
-        guess_board[row][column] = '-'
+        guess_board[row][column] = 'o'
         turns -= 1
     # Where all 5 computer ships have been hit
     if count_ships_hit(guess_board) == 5:
