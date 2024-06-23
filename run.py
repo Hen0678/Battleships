@@ -40,11 +40,12 @@ def ship_location():
         column = input('Enter a column letter (a-h)')
     return int(row) - 1, letters_to_numbers[column]
 
-
-
-
-
 # Will count every time a ship is hit
-def count_ships_hit():
-    pass
-
+def count_ships_hit(board):
+    count = 0
+    # For loop to increment score when a ship is hit
+    for row in board:
+        for column in row:
+            if column == 'x':
+                count += 1
+    return count
