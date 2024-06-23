@@ -4,8 +4,6 @@ from random import randint
 player_board = [[' '] * 8 for x in range(8)]
 # Creates an 8 x 8 board for player guesses
 guess_board = [[' '] * 8 for x in range(8)]
-print(player_board)
-print(guess_board)
 
 # A way to convert letters to numbers
 letters_to_numbers = {'a': 0, 'b': 1, 'c':2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7}
@@ -49,3 +47,9 @@ def count_ships_hit(board):
             if column == 'x':
                 count += 1
     return count
+
+make_ships(player_board)
+# Determines the number of guesses
+turns = 10
+print_board(player_board)
+print_board(guess_board)
