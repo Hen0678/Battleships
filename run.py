@@ -1,8 +1,8 @@
 from random import randint
 
-# Creates an 8 x 8 board that will hold the player ships
+# Creates an 6 x 6 board that will hold the player ships
 player_board = [[' '] * 6 for x in range(6)]
-# Creates an 8 x 8 board for player guesses
+# Creates an 6 x 6 board for player guesses
 guess_board = [[' '] * 6 for x in range(6)]
 
 # A way to convert letters to numbers
@@ -11,7 +11,7 @@ letters_to_numbers = {'a': 0, 'b': 1, 'c':2, 'd': 3, 'e': 4, 'f': 5}
 def print_board(board):
     print('  a b c d e f')
     print('-----------------')
-    # Iterates 1 through to 8 and joins on a "|" 
+    # Iterates 1 through to 6 and joins on a "|" 
     row_number = 1
     for row in board:
         print("%d|%s|" %  (row_number, "|".join(row)))
@@ -27,15 +27,15 @@ def make_ships(board):
 
 # Will ask ther user the row and column for their guess
 def ship_location():
-    row = input('Enter a row number (1-8): ')
-    # While loop if a number other than 1-8 is entered
+    row = input('Enter a row number (1-6): ')
+    # While loop if a number other than 1-6 is entered
     while row not in '123456':
-        print('Error - please enter a number (1-8)')
-        row = input('Enter a row number (1-8): ')
-    column = input('Enter a column letter (a-h): ')
+        print('Error - please enter a number (1-6)')
+        row = input('Enter a row number (1-6): ')
+    column = input('Enter a column letter (a-f): ')
     while column not in 'abcdef':
-        print('Error - please enter a letter (a-h)')
-        column = input('Enter a column letter (a-h): ')
+        print('Error - please enter a letter (a-f)')
+        column = input('Enter a column letter (a-f): ')
     return int(row) - 1, letters_to_numbers[column]
 
 # Will count every time a ship is hit
