@@ -54,29 +54,34 @@ turns = 10
 #print_board(player_board)
 #print_board(guess_board)
 while turns > 0:
-    print('Get ready to fire')
+    print('Get ready to fire!')
+    print("")
     print_board(guess_board)
     row, column = ship_location()
     # Will check to see if this guess has already been made
     if guess_board[row][column] == 'o':
-        print('Already guessed here - guess elsewhere')
+        print("")
+        print('Already guessed here - guess elsewhere.')
     # Places an x where a correct guess is made
     elif player_board[row][column] == 'x':
-        print('HIT!')
+        print("")
+        print('HIT!!!')
         guess_board[row][column] = 'x'
         # Counts down the number of turns remaining
         turns -= 1
     else:
-        print('Miss - recalibrate your coordinates')
+        print("")
+        print('** Miss - recalibrate your coordinates.**')
         # Add an '-' where the incorrect guess was made
         guess_board[row][column] = 'o'
         turns -= 1
     # Where all 5 computer ships have been hit
     if count_ships_hit(guess_board) == 5:
-        print('You have successfully destroyed the enemy fleet')
+        print('You have successfully destroyed the enemy fleet!')
         break
     # Tells the user how many turns they have left
-    print('You have ' + str(turns) + ' missles remaining')
+    print('You have ' + str(turns) + ' missles remaining.')
+    print("")
     # Where all turns have been used up
     if turns == 0:
         print('You are out of missles - game over!')
