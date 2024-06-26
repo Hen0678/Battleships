@@ -5,7 +5,7 @@ player_board = [[' '] * 6 for x in range(6)]
 # Creates an 6 x 6 board for player guesses
 guess_board = [[' '] * 6 for x in range(6)]
 
-# A way to convert letters to numbers
+# Converts letters to numbers
 letters_to_numbers = {'a': 0, 'b': 1, 'c':2, 'd': 3, 'e': 4, 'f': 5}
 
 def print_board(board):
@@ -33,6 +33,7 @@ def ship_location():
         print('Error - please enter a number (1-6)')
         row = input('Enter a row number (1-6): ')
     column = input('Enter a column letter (a-f): ')
+    # While loop if a letter other than a-f is entered
     while column not in 'abcdef':
         print('Error - please enter a letter (a-f)')
         column = input('Enter a column letter (a-f): ')
@@ -51,8 +52,6 @@ def count_ships_hit(board):
 make_ships(player_board)
 # Determines the number of guesses
 turns = 10
-#print_board(player_board)
-#print_board(guess_board)
 while turns > 0:
     print('Get ready to fire!')
     print("")
