@@ -14,7 +14,7 @@ After each guess the player will be told how many missles they have left. If the
 
 Player's will be notified when they hit a ship and this will also be marked with an 'x' on the game board. 
 
-![overview-page](assets/media/game_screen_overview.png)
+![responsive-page](assets/media/responsive_image.png)
 
 ## User Experience (UX) 
 
@@ -84,9 +84,11 @@ The following technologies were used for this site:
 |run.py|![assets/media/initial_validation_test.png](assets/media/initial_validation_test.png)|Made each amend as highlighted|![index.run.py-retest](assets/media/python_code_re-validation_test.png)|Pass|
 
 ### Bugs
-|Bug|Description|Solution applied|Result|
+|Bug|Image|Solution applied|Image|
 |:----|:----|:----|:----|
-|XX|XX|XX|XX|
+|When printing the game boards the output was not as expected|![image](assets/media/game_board_error.png)|The Print statements were added directly below the print_board function. To rectify this they were added below the make_ships function|![image](assets/media/game_board_fix.png)|
+|Error in the code when checking if all missles have been used up|![image](assets/media/missile_error_message.png)|The code was missing an "="|![image](assets/media/missile_error_message_fix.png)|
+|No space after entering a row number and column letter|![image](assets/media/row_and_column_error.png)|There were no spaces after the row and column inputs. To rectify this a space was added|![image](assets/media/row_and_column_fix.png)|
 
 ## Deployment 
 ### Deploying the site
