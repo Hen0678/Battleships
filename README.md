@@ -72,11 +72,11 @@ The following technologies were used for this site:
 ###
 |Features|Test Conducted|Expected Outcome|Test Outcome|
 |:----|:----|:----|:----|
-|Correct message displayed when missile misses ship|XX|XX|Pass|
-|Correct message displayed when missile hits ship|XX|XX|Pass|
-|Message displayed when the player guesses an already guessed square|XX|XX|Pass|
-|Number of missles left reduces by 1|XX|XX|Pass|
-|Game over message|XX|XX|Pass|
+|Correct message displayed when missile misses ship|Miss - recalibrate your coordinates|![message](assets/media/miss_message.png)|Pass|
+|Correct message displayed when missile hits ship|HIT!!!|![message](assets/media/hit_message.png)|Pass|
+|Message displayed when the player guesses an already guessed square|Already guessed here - guess elsewhere|![message](assets/media/already_guessed_message.png)|Pass|
+|Number of missles left|Reduces by 1|![message](assets/media/missles_left_2.png)![message](assets/media/missles_left_3.png)|Pass|
+|Game over message|You are out of missles - game over!|![message](assets/media/game_over.png)|Pass|
 
 ### Code validation
 |Page Tested|Screenshot of Errors|Solution Applied|Screenshot of Clear Validator Output|Test Outcome|
@@ -108,8 +108,8 @@ After creating the website in GitPod Enterprise, the site was deployed to Heroku
 ## Credits
 
 ### Code
-* Bro Code - used for Javascript inspiration.
-* Traversy - help with the reset button in Javascript.
+* Knowledge Mavens - How to Code Battleship in Python 
+
 
 
 
