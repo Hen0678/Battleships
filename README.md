@@ -4,15 +4,15 @@
 [View the live project here](https://my-battleship-game-86778a82a963.herokuapp.com/)
 
 ## Overview
-This classic game of Battleships is my 3rd portfolio project and focuses on the Python programming language.  
+This classic game of Battleships is my third portfolio project and focuses on the Python programming language. 
 
-The game is played on a 6 x 6 grid. The computer will place 5 ships on random squares within the grid. The player has 10 guesses to try and sink the 5 ships. 
+The game is played on a 6 x 6 grid. The computer will place five ships on random squares within the grid. The player has ten guesses to try and sink the five ships. 
 
 The game is customisable and additional ships and/or play turns can be easily amended. 
 
-After each guess the player will be told how many missles they have left. If the player guesses a previously guessed location then a message will prompt the player to select another location.  
+After each guess the player will be told how many missiles they have left. If the player guesses a previously guessed location, then a message will prompt the player to select another location.
 
-Player's will be notified when they hit a ship and this will also be marked with an 'x' on the game board. 
+Player's will be notified when they hit a ship, and this will also be marked with an 'x' on the game board. 
 
 ![responsive-page](assets/media/responsive_image.png)
 
@@ -48,7 +48,7 @@ As a user of this site, I want to:
 
 ![correct_guess](assets/media/correct_guess.png)
 
-* A message will be displayed to the player when all their missles have been used up.
+* A message will be displayed to the player when all their missiles have been used up.
 
 ![game_over](assets/media/game_over.png)
 
@@ -75,8 +75,8 @@ The following technologies were used for this site:
 |Correct message displayed when missile misses ship|Miss - recalibrate your coordinates|![message](assets/media/miss_message.png)|Pass|
 |Correct message displayed when missile hits ship|HIT!!!|![message](assets/media/hit_message.png)|Pass|
 |Message displayed when the player guesses an already guessed square|Already guessed here - guess elsewhere|![message](assets/media/already_guessed_message.png)|Pass|
-|Number of missles left|Reduces by 1|![message](assets/media/missles_left_2.png)![message](assets/media/missles_left_3.png)|Pass|
-|Game over message|You are out of missles - game over!|![message](assets/media/game_over.png)|Pass|
+|Number of missiles left|Reduces by 1|![message](assets/media/missiles_left_2.png)![message](assets/media/missiles_left_3.png)|Pass|
+|Game over message|You are out of missiles - game over!|![message](assets/media/game_over.png)|Pass|
 
 ### Code validation
 |Page Tested|Screenshot of Errors|Solution Applied|Screenshot of Clear Validator Output|Test Outcome|
@@ -86,31 +86,24 @@ The following technologies were used for this site:
 ### Bugs
 |Bug|Image|Solution applied|Image|
 |:----|:----|:----|:----|
-|When printing the game boards the output was not as expected|![image](assets/media/game_board_error.png)|The Print statements were added directly below the print_board function. To rectify this they were added below the make_ships function|![image](assets/media/game_board_fix.png)|
-|Error in the code when checking if all missles have been used up|![image](assets/media/missile_error_message.png)|The code was missing an "="|![image](assets/media/missile_error_message_fix.png)|
+|When printing the game boards the output was not as expected|![image](assets/media/game_board_error.png)|The Print statements were added directly below the print_board function. To rectify this, they were added below the make_ships function|![image](assets/media/game_board_fix.png)|
+|Error in the code when checking if all missiles have been used up|![image](assets/media/missile_error_message.png)|The code was missing an "="|![image](assets/media/missile_error_message_fix.png)|
 |No space after entering a row number and column letter|![image](assets/media/row_and_column_error.png)|There were no spaces after the row and column inputs. To rectify this a space was added|![image](assets/media/row_and_column_fix.png)|
 
 ## Deployment 
 ### Deploying the site
 After creating the website in GitPod Enterprise, the site was deployed to Heroku to host. To deploy the project, use the following steps:
-* In the GitHub repository, navigate to the Settings tab at the top of the page.
-* Select Pages on the left hand side of the page
-* Under "Build and deployment" there is a Source dropdown. Select Deploy from a branch and then Save.
-* Once the main branch has been selected and saved, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-* The live link to the site can be found here - https://hen0678.github.io/Rock-Paper-Scissors-Lizard-Spock/
-
-### Cloning the site
-
-* Go to https://github.com/Hen0678/Rock-Paper-Scissors-Lizard-Spock. 
-* Click the Code button. 
-* Select Copy URL to Clipboard.
-* Open a GitBash terminal and navigate to the directory where you want to locate the clone.
-* On the command line, type "git clone" then paste in the copied URL and press the Enter key to begin the clone process.
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the buildbacks to Python and Node JS in that order
+* Link the Heroku app to the repository
+* Click on Deploy
 
 ## Credits
 
 ### Code
 * Knowledge Mavens - How to Code Battleship in Python 
+* Deployment section of README - Code Institute ULTIMATE Battleships README
 
 
 
