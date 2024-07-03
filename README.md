@@ -8,7 +8,7 @@ This classic game of Battleships is my third portfolio project and focuses on th
 
 The game is played on a 6 x 6 grid. The computer will place five ships on random squares within the grid. The player has ten guesses to try and sink the five ships. 
 
-The game is customisable and additional ships and/or play turns can be easily amended. 
+The game is customisable and additional ships and/or play turns can be easily amended within the code. 
 
 After each guess the player will be told how many missiles they have left. If the player guesses a previously guessed location, then a message will prompt the player to select another location.
 
@@ -75,7 +75,7 @@ The following technologies were used for this site:
 |Correct message displayed when missile misses ship|Miss - recalibrate your coordinates|![message](assets/media/miss_message.png)|Pass|
 |Correct message displayed when missile hits ship|HIT!!!|![message](assets/media/hit_message.png)|Pass|
 |Message displayed when the player guesses an already guessed square|Already guessed here - guess elsewhere|![message](assets/media/already_guessed_message.png)|Pass|
-|Number of missiles left|Reduces by 1|![message](assets/media/missiles_left_2.png)![message](assets/media/missiles_left_3.png)|Pass|
+|Number of missiles left|Reduces by 1|![message](assets/media/missiles_left_3.png)![message](assets/media/missiles_left_2.png)|Pass|
 |Game over message|You are out of missiles - game over!|![message](assets/media/game_over.png)|Pass|
 
 ### Code validation
@@ -102,8 +102,8 @@ After creating the website in GitPod Enterprise, the site was deployed to Heroku
 ## Credits
 
 ### Code
-* Knowledge Mavens - How to Code Battleship in Python 
-* Deployment section of README - Code Institute ULTIMATE Battleships README
+* Knowledge Mavens - How to Code Battleship in Python. 
+* Deployment section of README - Code Institute ULTIMATE Battleships README.
 
 
 
