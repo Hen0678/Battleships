@@ -102,8 +102,8 @@ After creating the website in GitPod Enterprise, the site was deployed to Heroku
 ## Credits
 
 ### Code
-* Knowledge Mavens - How to Code Battleship in Python. 
-* Deployment section of README - Code Institute ULTIMATE Battleships README.
+* [Knowledge Mavens - How to Code Battleship in Python](https://www.youtube.com/@KnowledgeMavens). 
+* [Deployment section of README - Code Institute ULTIMATE Battleships README](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/).
 
 
 

@@ -1,3 +1,5 @@
+# Accreditation to Knowledge Mavens with code ideas
+
 from random import randint
 
 # Creates an 6 x 6 board that will hold the player ships
